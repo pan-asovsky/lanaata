@@ -6,6 +6,7 @@
 
 <script>
 import Upclicker from './components/Upclicker.vue';
+import 'bootstrap/dist/css/bootstrap.css'
 
 export default {
   name: 'App',
