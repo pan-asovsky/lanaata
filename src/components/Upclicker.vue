@@ -2,9 +2,7 @@
   <div>
     <p>Hello, world</p>
   </div>
-  <div>
-    <button @click="incrementCount" class="btn btn-primary">Click me!</button>
-  </div>
+    <button type="button" class="btn btn-primary" @click="incrementCount">Click me!</button>
   <div>
     <span>Count: {{ count }}</span>
   </div>
