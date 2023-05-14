@@ -1,29 +1,16 @@
 <template>
-  <div>
-    <p>Hello, world</p>
-  </div>
-    <button type="button" class="btn btn-primary" @click="incrementCount">Click me!</button>
-  <div>
-    <span>Count: {{ count }}</span>
-  </div>
+    <div class="btn btn-primary" @click="count++">Click to increase</div>
+    <span class="ms-3">{{ count }}</span>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      count: 0
-    };
-  },
-  mounted() {
-    console.log(`Upclicker mounted, count is ${this.count}`);
-  },
-  methods: {
-    incrementCount() {
-      this.count++;
-    }
-  }
-};
+<script setup lang="ts">
+import { onMounted, ref} from "vue";
+
+const count = ref(0);
+
+onMounted(() => {
+    console.log('Upclicker mounted. Count is ' + count.value);
+})
 </script>
 
 <style scoped>
