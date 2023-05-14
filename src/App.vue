@@ -1,18 +1,11 @@
 <template>
-  <div id="app">
     <Upclicker/>
-  </div>
+    <Downclicker/>
 </template>
 
-<script>
+<script setup lang="ts">
 import Upclicker from './components/Upclicker.vue';
-
-export default {
-  name: 'App',
-  components: {
-    Upclicker
-  }
-}
+import Downclicker from "./components/Downclicker.vue";
 </script>
 
 <style scoped>

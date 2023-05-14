@@ -1,10 +1,10 @@
 <template>
     <div class="btn btn-primary" @click="count++">Click to increase</div>
-    <span class="ms-3">{{ count }}</span>
+    <span class="p-3">{{ count }}</span>
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref} from "vue";
+import { onMounted, ref } from "vue";
 
 const count = ref(0);
 
