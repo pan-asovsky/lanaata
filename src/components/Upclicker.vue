@@ -5,11 +5,14 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
+import { useRoute } from "vue-router";
 
+const route = useRoute();
 const count = ref(0);
 
 onMounted(() => {
-    console.log('Upclicker mounted. Count is ' + count.value);
+    console.log(`Upclicker mounted. Count: ${route.params.count}`);
+    count.value = route.params.count;
 })
 </script>
 
