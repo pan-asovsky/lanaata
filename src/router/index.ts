@@ -2,7 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw, Router } from "vue-rout
 
 const routes : Array<RouteRecordRaw> = [
     {
-        path: "/home",
+        path: "/",
         name: "Home",
         component: () => import(('../components/Home.vue'))
     },
@@ -12,7 +12,7 @@ const routes : Array<RouteRecordRaw> = [
         component: () => import(('../components/Upclicker.vue'))
     },
     {
-        path: "/down",
+        path: "/down/:count",
         name: "Downclicker",
         component: () => import(('../components/Downclicker.vue'))
     }
