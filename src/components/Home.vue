@@ -4,7 +4,7 @@
         <div class="btn btn-dark"
              @click="toUpclicker">To Upclicker</div>
         <div class="btn btn-warning"
-             @click="router.push({ name: 'Downclicker', params: { count: 2 }})">To Downclicker</div>
+             @click="router.push({ name: 'Downclicker' })">To Downclicker</div>
     </div>
 </template>
 
@@ -14,7 +14,7 @@ import {useRouter} from "vue-router";
 let router = useRouter();
 
 function toUpclicker() {
-    router.push({ name: 'Upclicker', params: { count: 1 }})
+    router.push({ name: 'Upclicker' })
 }
 </script>
 

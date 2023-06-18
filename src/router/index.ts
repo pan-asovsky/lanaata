@@ -7,12 +7,12 @@ const routes : Array<RouteRecordRaw> = [
         component: () => import(('../components/Home.vue'))
     },
     {
-        path: "/up/:count",
+        path: "/up",
         name: "Upclicker",
         component: () => import(('../components/Upclicker.vue'))
     },
     {
-        path: "/down/:count",
+        path: "/down",
         name: "Downclicker",
         component: () => import(('../components/Downclicker.vue'))
     }
